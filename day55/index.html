@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quantify Capital - Ultra-premium wealth management and bespoke private banking services for elite individuals. Securing and compounding generational wealth.">
+  <title>Quantify Capital | Bespoke Wealth Management & Private Banking</title>
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Grid Lines -->
+  <div class="grid-overlay" id="gridOverlay"></div>
+
+  <!-- Luxury Navigation Header -->
+  <header class="luxury-header" id="luxuryHeader">
+    <a href="#home" class="logo" data-page="home">
+      QUANTIFY<span>CAPITAL</span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="nav-link active" data-page="home">Home</a>
+      <a href="#about" class="nav-link" data-page="about">About Us</a>
+      <a href="#reviews" class="nav-link" data-page="reviews">Reviews</a>
+      <a href="#contact" class="nav-link" data-page="contact">Contact Us</a>
+    </nav>
+    <div class="header-cta">
+      <a href="#contact" class="btn-gold-outline" data-page="contact">Inquire Now</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="page-container" id="pageContainer">
+
+    <!-- PAGE 1: HOMEPAGE -->
+    <section id="home" class="page-section active show">
+      <div class="hero-content">
+        <div class="hero-text">
+          <span class="section-tag">Bespoke Private Wealth</span>
+          <h1>Safeguarding Capital. <br><span class="gold-gradient-text">Compounding Legacy.</span></h1>
+          <p>Quantify Capital manages significant liquid and alternative assets for ultra-high-net-worth individuals and families. We act as a private depository and bank for a select circle, structuring highly diversified portfolios designed to secure capital against inflation while capturing global upside.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn-gold" data-page="contact">Begin Consultation</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="luxury-graphic">
+            <div class="graphic-ring ring-1"></div>
+            <div class="graphic-ring ring-2"></div>
+            <div class="graphic-ring ring-3"></div>
+            <div class="graphic-core"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Home Statistics -->
+      <div class="home-stats">
+        <div class="stat-item card-premium">
+          <div class="stat-number">$15.4B</div>
+          <div class="stat-label">Assets Managed</div>
+        </div>
+        <div class="stat-item card-premium">
+          <div class="stat-number">14.8%</div>
+          <div class="stat-label">Average Annualized Yield</div>
+        </div>
+        <div class="stat-item card-premium">
+          <div class="stat-number">99.2%</div>
+          <div class="stat-label">Client Retention</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 2: ABOUT US -->
+    <section id="about" class="page-section">
+      <div class="section-header">
+        <span class="section-tag">Elite Institutional Standards</span>
+        <h2>Three Pillars of Our Operation</h2>
+        <p>Quantify Capital was founded on a simple promise: to offer institutional caliber investment expertise with absolute discretion and personalized service.</p>
+      </div>
+
+      <!-- About Section 1: Security & Custody -->
+      <div class="about-grid-1">
+        <div class="about-text">
+          <span class="section-tag">Pillar One</span>
+          <h3 class="gold-gradient-text" style="font-size: 1.8rem; margin-bottom: 20px;">Absolute Security & Trust</h3>
+          <p style="margin-bottom: 25px;">As a private depository and private banking provider for a select group of global citizens, we understand that capital preservation is paramount. Your wealth is secured through institutional-grade multi-layer custody structures, Swiss-regulated vaults, and leading-edge cryptographic digital asset vaults.</p>
+          <p>We work under the strictest compliance standards, guaranteeing complete legal isolation of client assets, bank-grade liquidity buffers, and absolute regulatory compliance, backed by premier global reinsurance underwriters.</p>
+        </div>
+        <div class="about-features">
+          <div class="feature-block card-premium">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-shield-halved"></i></div>
+            <div>
+              <h4 class="feature-title">Asset Segregation</h4>
+              <p>All client portfolios are held in separate, distinct legal entities, ensuring complete protection from counterparty risk.</p>
+            </div>
+          </div>
+          <div class="feature-block card-premium">
+            <div class="feature-icon-wrapper"><i class="fa-solid fa-building-columns"></i></div>
+            <div>
+              <h4 class="feature-title">Private Vault Depository</h4>
+              <p>Direct physical allocation options for precious metals, hard assets, and sovereign cash reserve management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Section 2: Consistent Results & Diversification -->
+      <div class="about-grid-2">
+        <div class="chart-card">
+          <div class="chart-header">
+            <span class="chart-title">Fund Outperformance (10-Yr)</span>
+            <div class="chart-legend">
+              <div class="legend-item">
+                <span class="legend-color legend-gold"></span>
+                <span>Quantify Cap.</span>
+              </div>
+              <div class="legend-item">
+                <span class="legend-color legend-grey"></span>
+                <span>S&P 500</span>
+              </div>
+            </div>
+          </div>
+          <div class="chart-container">
+            <canvas id="performanceChart"></canvas>
+          </div>
+        </div>
+        <div class="about-text">
+          <span class="section-tag">Pillar Two</span>
+          <h3 class="gold-gradient-text" style="font-size: 1.8rem; margin-bottom: 20px;">Consistent & Real Results</h3>
+          <p style="margin-bottom: 25px;">Our core philosophy is diversification driven by mathematical risk limits. We build resilient portfolios spread across uncorrelated asset classes: private credit, algorithmic public equity portfolios, institutional real estate, and venture capital allocations.</p>
+          <p>This macro-diversified model ensures our portfolios produce real, consistent yields under all market conditions, protecting purchasing power during inflation and actively growing capital in high-growth environments.</p>
+        </div>
+      </div>
+
+      <!-- About Section 3: Performance Happiness & Dedication -->
+      <div class="about-grid-3">
+        <div class="about-text">
+          <span class="section-tag">Pillar Three</span>
+          <h3 class="gold-gradient-text" style="font-size: 1.8rem; margin-bottom: 20px;">Client Satisfaction & Longevity</h3>
+          <p style="margin-bottom: 25px;">We do not measure our success in quarters; we measure it in generations. Our clients enjoy tailored, transparent capital management, with real-time digital balance sheet tracking and 24/7 direct access to their private relationship officer.</p>
+          <p>By delivering consistent performance net of fees, we have achieved a market-leading client satisfaction score, resulting in a near-perfect client retention rate and multi-generational trust.</p>
+        </div>
+        <div class="metrics-list">
+          <div class="metric-card">
+            <div class="metric-value">99.2%</div>
+            <div class="metric-desc">Annual Retention</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">15.4%</div>
+            <div class="metric-desc">Avg Net Return 2025</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">&lt; 3.5%</div>
+            <div class="metric-desc">Maximum Volatility</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-value">24/7</div>
+            <div class="metric-desc">Elite Advisory Access</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: REVIEWS -->
+    <section id="reviews" class="page-section reviews-section">
+      <div class="section-header">
+        <span class="section-tag">Distinguished Client Network</span>
+        <h2>Endorsed by the Industry</h2>
+        <p>A collection of testimonials from single family offices, tech founders, and legacy estates who trust Quantify Capital with their wealth preservation.</p>
+      </div>
+
+      <div class="reviews-carousel-wrapper">
+        <div class="reviews-track" id="reviewsTrack">
+          <!-- Slide 1 -->
+          <div class="review-slide active">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"Quantify Capital has redefined private banking for my family office. Their risk management protocols during market volatility are exemplary, preserving our capital while generating steady yield."</p>
+              <div class="review-author">Marcus Vance</div>
+              <div class="review-title">Managing Partner, Vance Family Office</div>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"Finding a wealth partner that balances absolute confidentiality with high-tier market performance was extremely difficult until I was introduced to Quantify Capital. A truly elite service."</p>
+              <div class="review-author">Lady Alexandra Sterling</div>
+              <div class="review-title">Sterling Estates</div>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"Their diversification strategy is brilliant. We have seen consistent outperformance over the last seven years, far outstripping typical retail banks or general advisors."</p>
+              <div class="review-author">Dr. Hiroshi Tanaka</div>
+              <div class="review-title">CEO, Tanaka Biotech Group</div>
+            </div>
+          </div>
+          <!-- Slide 4 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"Acting as both my personal wealth manager and private depository, Quantify Capital offers an integrated liquidity access that is unmatched in speed and discretion."</p>
+              <div class="review-author">Vikram Oberoi</div>
+              <div class="review-title">Chairman, Oberoi Logistics</div>
+            </div>
+          </div>
+          <!-- Slide 5 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"The transparency is refreshing. Audited reports are detailed and clear. I sleep well knowing my portfolio is diversified across uncorrelated global assets."</p>
+              <div class="review-author">Sophia Moretti</div>
+              <div class="review-title">Founder, Moretti Couture</div>
+            </div>
+          </div>
+          <!-- Slide 6 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"Their bespoke investment approach tailored to my complex tax and legacy planning requirements has saved us millions. They treat wealth management as a craft."</p>
+              <div class="review-author">Arthur Pendelton</div>
+              <div class="review-title">Heritage Trust Chairman</div>
+            </div>
+          </div>
+          <!-- Slide 7 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"During the recent market downturns, Quantify Capital's downside protection strategies kept our capital secure. The consistency of their returns is remarkable."</p>
+              <div class="review-author">Elena Rostova</div>
+              <div class="review-title">Managing Director, Rostova VC</div>
+            </div>
+          </div>
+          <!-- Slide 8 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"The personalized attention is exceptional. My private advisor is accessible 24/7. They don't just manage assets; they anticipate financial opportunities."</p>
+              <div class="review-author">Chevalier Jean-Pierre Laurent</div>
+              <div class="review-title">Laurent Shipping</div>
+            </div>
+          </div>
+          <!-- Slide 9 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"Quantify Capital's private banking services are incredibly agile. Executing cross-border transfers and securing short-term leverage is seamless and discrete."</p>
+              <div class="review-author">Amara Okafor</div>
+              <div class="review-title">Founder, Okafor Global Tech</div>
+            </div>
+          </div>
+          <!-- Slide 10 -->
+          <div class="review-slide">
+            <div class="review-card">
+              <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+              <p class="review-text">"A pristine institution. They have handled our multi-generational wealth preservation flawlessly. Their yearly performance consistency is why we remain loyal."</p>
+              <div class="review-author">Richard Carrington</div>
+              <div class="review-title">Carrington Trust</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Navigation Controls -->
+        <div class="reviews-nav">
+          <button class="carousel-btn" id="prevBtn" aria-label="Previous Review">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <div class="carousel-dots" id="carouselDots">
+            <!-- JavaScript will render the dots -->
+          </div>
+          <button class="carousel-btn" id="nextBtn" aria-label="Next Review">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: CONTACT US -->
+    <section id="contact" class="page-section">
+      <div class="section-header">
+        <span class="section-tag">Strictly Confidential</span>
+        <h2>Initiate Consultation</h2>
+        <p>Private wealth management is structured around individual needs. Reach out to our client advisory office via WhatsApp, Instagram, phone, or submit the secure portal form below.</p>
+      </div>
+
+      <div class="contact-container">
+        <!-- Contact details -->
+        <div class="contact-info-card card-premium">
+          <div>
+            <span class="section-tag" style="margin-bottom: 10px;">Connect Instantly</span>
+            <h3 class="gold-gradient-text" style="font-size: 1.5rem; margin-bottom: 20px;">Client Liaison Office</h3>
+            <p>Our client services team handles all communications with absolute confidentiality. Select your preferred channel below:</p>
+          </div>
+
+          <div class="contact-channels">
+            <!-- Phone Call -->
+            <a href="tel:+91XXXXXXXXXX" class="contact-method" id="phoneLink">
+              <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <div class="contact-label">Direct Line</div>
+                <div class="contact-value">+91 XXXXXXXXXX</div>
+              </div>
+            </a>
+
+            <!-- WhatsApp Message -->
+            <a href="https://wa.me/91XXXXXXXXXX" target="_blank" rel="noopener noreferrer" class="contact-method" id="whatsappLink">
+              <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+              <div>
+                <div class="contact-label">Secure WhatsApp</div>
+                <div class="contact-value">+91 XXXXXXXXXX</div>
+              </div>
+            </a>
+
+            <!-- Instagram Link -->
+            <a href="https://instagram.com/QuantifyCapital.official" target="_blank" rel="noopener noreferrer" class="contact-method" id="instagramLink">
+              <div class="contact-icon"><i class="fa-brands fa-instagram"></i></div>
+              <div>
+                <div class="contact-label">Instagram Profile</div>
+                <div class="contact-value">@QuantifyCapital.official</div>
+              </div>
+            </a>
+          </div>
+
+          <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 30px;">
+            <i class="fa-solid fa-lock" style="margin-right: 5px; color: var(--accent-gold);"></i> All data sent through this channel is end-to-end encrypted.
+          </p>
+        </div>
+
+        <!-- Secure Form Inquiry -->
+        <div class="inquiry-form-card card-premium">
+          <span class="section-tag" style="margin-bottom: 10px;">Secure Client Portal</span>
+          <h3>Consultation Request</h3>
+          <p>Please enter your contact details and a private banker will contact you within two business hours.</p>
+          
+          <form id="inquiryForm" autocomplete="off">
+            <div class="form-group">
+              <input type="text" id="clientName" class="form-input" placeholder=" " required>
+              <label for="clientName" class="form-label">Full Name</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="email" id="clientEmail" class="form-input" placeholder=" " required>
+              <label for="clientEmail" class="form-label">Secure Email Address</label>
+            </div>
+
+            <div class="form-group">
+              <input type="text" id="clientPhone" class="form-input" placeholder=" ">
+              <label for="clientPhone" class="form-label">Contact Number (Optional)</label>
+            </div>
+
+            <div class="form-group">
+              <textarea id="clientMessage" class="form-input" placeholder=" " required></textarea>
+              <label for="clientMessage" class="form-label">Brief inquiry requirements</label>
+            </div>
+
+            <button type="submit" class="btn-gold" style="width: 100%; text-align: center; justify-content: center;">Submit Inquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Toast Notification System -->
+  <div class="toast-message" id="toastMessage">
+    <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+    <div class="toast-text" id="toastText">Inquiry transmitted successfully.</div>
+  </div>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <div class="footer-logo">
+      QUANTIFY<span>CAPITAL</span>
+    </div>
+    <div class="footer-nav">
+      <a href="#home" class="footer-link" data-page="home">Home</a>
+      <a href="#about" class="footer-link" data-page="about">About Us</a>
+      <a href="#reviews" class="footer-link" data-page="reviews">Reviews</a>
+      <a href="#contact" class="footer-link" data-page="contact">Contact Us</a>
+    </div>
+    <p class="footer-disclaimer">
+      DISCLAIMER: Quantify Capital is a private wealth management institution. Private banking depository services are provided exclusively to qualified individuals under the regulations of the jurisdictions in which we operate. Investment values can fluctuate. Past performance is not indicative of future returns.
+    </p>
+    <div class="footer-copy">
+      &copy; 2026 Quantify Capital. All Rights Reserved. Confidentiality Assured.
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
